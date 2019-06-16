@@ -1,12 +1,16 @@
 import React,{useState} from 'react'
 
+
+const C3=()=> <div>hello</div>
+const C2=()=> <div>good bye</div>
+const C1=()=> <div>never see you</div>
+
 export default
-((weapons)=>(newIdeas)=>(props)=>
+((Comp3)=>(Comp2)=>(Comp1)=>(newIdeas)=>(props)=>
 {
   const [ideas, setIdea]=useState(newIdeas)
-  const jsx=
-  <div>
-    <span>hello</span>
-  </div>
-  return jsx
-})('ak47')({idea:'idea1'})
+
+  return <div><C1/><C2/><C3/></div>
+
+
+})(C3)(C2)(C1)({idea:'idea1'})
