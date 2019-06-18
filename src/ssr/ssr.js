@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import Comp from 'src/jsx/jsx'
+import Comp from 'src/render/root'
 import React from 'react'
 import {renderToString} from 'react-dom/server'
 import {StaticRouter} from 'react-router-dom'

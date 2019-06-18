@@ -8,13 +8,13 @@ import 'src/assets/favicon/favicon-16x16'
 import 'src/assets/favicon/favicon-32x32'
 import 'src/assets/favicon/favicon'
 import 'src/assets/favicon/site'
-import Comp from 'src/jsx/jsx'
+import App from 'src/render/root'
 import {BrowserRouter} from 'react-router-dom'
 
 hydrate
 (
   <BrowserRouter>
-      <Comp/>
+      <App>{{idea2:'horripilus'}}</App>
     </BrowserRouter>
   ,document.getElementById('root')
 )

@@ -23,7 +23,7 @@ module.exports =
     rules:
     [
       {
-        test: /\.(js)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use:
         {
@@ -65,7 +65,7 @@ module.exports =
       "node_modules",
       path.resolve("./")
     ],
-    extensions: ['.js','.css','.scss','.sass']
+    extensions: ['.js','.jsx','.css','.scss','.sass']
   },
   watchOptions:
   {

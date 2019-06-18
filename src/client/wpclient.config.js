@@ -36,7 +36,7 @@ module.exports =
         ],
       },
       {
-        test: /\.(js)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use:
         {
@@ -86,7 +86,7 @@ module.exports =
       "node_modules",
       path.resolve("./")
     ],
-    extensions: ['.js','.css','.scss','.sass','.ico','.png','.webmanifest']
+    extensions: ['.js','.jsx','.css','.scss','.sass','.ico','.png','.webmanifest']
   },
   watchOptions:
   {
