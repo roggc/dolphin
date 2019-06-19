@@ -9,12 +9,12 @@ import 'src/assets/favicon/favicon-32x32'
 import 'src/assets/favicon/favicon'
 import 'src/assets/favicon/site'
 import App from 'src/render/root'
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter,Route} from 'react-router-dom'
 
 hydrate
 (
   <BrowserRouter>
-      <App>{{idea2:'horripilus'}}</App>
-    </BrowserRouter>
+    <App/>
+  </BrowserRouter>
   ,document.getElementById('root')
 )

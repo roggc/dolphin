@@ -12,5 +12,11 @@ export default iState=>props=>C=>({children,...rest})=>
         ...children
       }
     )
+    props=
+    {
+      ...props,
+      state,
+      setState
+    }
     return <C{...props}{...rest}>{{...state,...children}}</C>
   }
