@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import Comp from 'src/render/root'
+import App from 'src/render/root'
 import React from 'react'
 import {renderToString} from 'react-dom/server'
 import {StaticRouter} from 'react-router-dom'
@@ -15,9 +15,15 @@ export const ssr=
   renderToString
   (
     <StaticRouter location={req.url} context={context}>
-      <Comp/>
+      <App/>
     </StaticRouter>
   )
+  if (context.url) {
+  // Somewhere a `<Redirect>` was rendered
+  redirect(301, context.url);
+} else {
+  console.log('all good')
+}
   fs.readFile
   (
     path.resolve('dist/foo.html'),'utf8',(err, data)=>

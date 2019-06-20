@@ -12,6 +12,6 @@ export default
     <div>
       <i className="fas fa-bars"></i>
     </div>
-    {showMenu&&<Modal content={contentMenu} style={{right:'68px'}}/>}
+    <Modal opa={showMenu?1:0} content={contentMenu} style={{right:'68px'}}/>
   </div>{console.log(children)}
 </div>

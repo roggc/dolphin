@@ -19,3 +19,18 @@
   visibility: initial;
   z-index: 1;
 }
+
+.fade
+{
+  transition:opacity .5s;
+}
+
+.show
+{
+  opacity:1;
+}
+
+.notShow
+{
+  opacity: 0;
+}
